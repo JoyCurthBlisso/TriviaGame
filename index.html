@@ -4,11 +4,13 @@
 	<head>
 	  <meta charset="UTF-8">
 	  <title>Herbalist Trivia Game</title>
+	  
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">  
 	
 	<!-- //ADD BOOTSTRAP REFERENCES -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    	<script src="assets/javascript/app.js"></script>
+    
+    <script src="assets/javascript/app.js"></script>
 
 
 	<h1>Herbalism Trivia</h1>
@@ -31,14 +33,14 @@
 	<form>
 	 	1. Which spice is harvested from the stamens of a beautiful purple crocus?
 	 	<br>
-	 	<input type="radio" value="Saffron" class="true">Saffron, Crocus sativus
+	 	<input type="radio" name="1" value="Tumeric">Turmeric, Curcuma longa
 	 	<br>
-	 	<input type="radio" value="Tumeric" class="false">Turmeric, Curcuma longa
+	 	<input type="radio" name="1" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" value="Saffron" class="false">Saffron, Crocus sativus
-	 	<br>
-	 	<input type="radio" value="Tumeric" class="false">Turmeric, Curcuma longa
-	 	<br>
+	 	<input type="radio" name="1" value="Fennel">Fennel, Foeniculum vulgare
+		<br>
+	 	<input type="radio" name="1" value="Wormwood">Wormwood, Artemisia absinthium
+		<br>
 	 	
 	 </form>
 
@@ -47,13 +49,13 @@
 	</form>
 		2. What spice, according to Malaysian folklore, had the power to protect against crocodiles?
 		<br>
-		<input type="radio" value="Tumeric">Tumeric, Curcuma longa
+	 	<input type="radio" name="2" value="Fennel">Fennel, Foeniculum vulgare
 		<br>
-	 	<input type="radio" value="Saffron">Saffron, Crocus sativus
-	 	<br>
-	 	<input type="radio" value="Dandelion">Dandelion, Taraxacum officinale
-	 	<br>
-	 	<input type="radio" value="Anise Seed">Anise Seed, Pimpinella anisum
+	 	<input type="radio" name="2" value="Wormwood">Wormwood, Artemisia absinthium
+		<br>
+	 	<input type="radio" name="2" value="Tumeric">Tumeric, Curcuma longa
+		<br>
+	 	<input type="radio" name="2"" value="Anise Seed">Anise Seed, Pimpinella anisum
 		<br>
 	 </form>
 
@@ -62,13 +64,13 @@
 	<form>
 		3. Some common French names for what plant are “Pissenlit” and “Dent-de-lion”?
 		<br>
-		<input type="radio" value="Dandelion">Dandelion, Taraxacum officinale
+	 	<input type="radio" name="3" value="Saffron">Saffron, Crocus sativus
+	 	<br>
+	 	<input type="radio" name="3" value="Tumeric">Tumeric, Curcuma longa
+	 	<br>
+	 	<input type="radio" name="3" value="Anise Seed">Anise Seed, Pimpinella anisum
 		<br>
-	 	<input type="radio" value="Saffron">Saffron, Crocus sativus
-	 	<br>
-	 	<input type="radio" value="Tumeric">Tumeric, Curcuma longa
-	 	<br>
-	 	<input type="radio" value="Anise Seed">Anise Seed, Pimpinella anisum
+		<input type="radio" name="3" value="Dandelion">Dandelion, Taraxacum officinale
 		<br>
 	</form>
 
@@ -77,13 +79,13 @@
 	<form>
 		4. What herb was once utilized as an antidote for poisoned arrows? Today, it is used to thicken 	culinary dishes and in body care preparations.
 		<br>
-		<input type="radio" value="Arrowroot">Arrowroot, Maranta arundinacea
+		<input type="radio" name="4" value="Arrowroot">Arrowroot, Maranta arundinacea
 		<br>
-	 	<input type="radio" nvalue="Saffron">Saffron, Crocus sativus
+	 	<input type="radio" name="4" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" value="Tumeric">Tumeric, Curcuma longa
+	 	<input type="radio" name="4" value="Tumeric">Tumeric, Curcuma longa
 	 	<br>
-	 	<input type="radio" value="Anise Seed">Anise Seed, Pimpinella anisum
+	 	<input type="radio" name="4" value="Anise Seed">Anise Seed, Pimpinella anisum
 		<br>
 	</form>
 
@@ -92,13 +94,13 @@
 	<form>
 		5. The essential oil distilled from what spice is used by Fishermen to disguise their scent when fishing?	
 		<br>
-		<input type="radio" value="Anise Seed">Anise Seed, Pimpinella anisum
+	 	<input type="radio" name="5" value="Saffron">Saffron, Crocus sativus
+	 	<br>
+	 	<input type="radio" name="5" value="Anise Seed">Anise Seed, Pimpinella anisum
 		<br>
-	 	<input type="radio" value="Saffron">Saffron, Crocus sativus
+	 	<input type="radio" name="5" value="Tumeric">Tumeric, Curcuma longa
 	 	<br>
-	 	<input type="radio" value="Tumeric">Tumeric, Curcuma longa
-	 	<br>
-	 	<input type="radio" value="Goldenseal">Goldenseal, Hydrastis canadensis
+	 	<input type="radio" name="5" value="Goldenseal">Goldenseal, Hydrastis canadensis
 		<br>
 	</form>
 
@@ -107,13 +109,13 @@
 	<form>
 		6. Which North American herb was named for the gold color of its rhizome?
 		<br>
-		<input type="radio" value="Goldenseal">Goldenseal, Hydrastis canadensis
+		<input type="radio" name="6" value="Goldenseal">Goldenseal, Hydrastis canadensis
 		<br>
-	 	<input type="radio" value="Saffron">Saffron, Crocus sativus
+	 	<input type="radio" name="6" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" value="Tumeric">Tumeric, Curcuma longa
-	 	<br>
-	 	<input type="radio" value="Valerian">Valerian, Valeriana officinalis
+	 	<input type="radio" name="6" value="Anise Seed">Anise Seed, Pimpinella anisum
+		<br>
+	 	<input type="radio" name="6" value="Valerian">Valerian, Valeriana officinalis
 		<br>
 	</form>
 
@@ -122,13 +124,13 @@
 	<form>
 		7. Which plant produces sweetly perfumed flowers, but has roots that smell like “old socks”? Another interesting fact about this plant is that cats love it, sometimes even more so than Catnip!
 		<br>
-		<input type="radio" value="Valerian">Valerian, Valeriana officinalis
+		<input type="radio" name="7" value="Valerian">Valerian, Valeriana officinalis
 		<br>
-	 	<input type="radio" value="Saffron">Saffron, Crocus sativus
+	 	<input type="radio" name="7" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" value="Tumeric">Turmeric, Curcuma longa
-	 	<br>
-	 	<input type="radio" value="Goldenseal">Goldenseal, Hydrastis canadensis
+	 	<input type="radio" name="7" value="Valerian">Valerian, Valeriana officinalis
+		<br>
+	 	<input type="radio" name="7" value="Goldenseal">Goldenseal, Hydrastis canadensis
 		<br>
 	</form>
 
@@ -137,13 +139,13 @@
 	<form>
 		8. Valium was not named after Valerian, but Aspirin was named after this plant. What is it?	
 		<br>
-		<input type="radio" value="Meadowsweet">Meadowsweet, Filipendula Ulmaria
+		<input type="radio" name="8" value="Meadowsweet">Meadowsweet, Filipendula Ulmaria
 		<br>
-	 	<input type="radio" value="Saffron">Saffron, Crocus sativus
+	 	<input type="radio" name="8" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" value="Tumeric">Tumeric, Curcuma longa
+	 	<input type="radio" name="8" value="Tumeric">Tumeric, Curcuma longa
 	 	<br>
-	 	<input type="radio" value="Goldenseal">Goldenseal, Hydrastis canadensis
+	 	<input type="radio" name="8" value="Wormwood">Wormwood, Artemisia absinthium
 		<br>
 	</form>
 
@@ -152,13 +154,13 @@
 	<form>
 		9. Which herb, used in a famous type of liqueur, has been credited for the birth of the Impressionist art movement?
 		<br>
-		<input type="radio" value="Wormwood">Wormwood, Artemisia absinthium
+		<input type="radio" name="9" value="Wormwood">Wormwood, Artemisia absinthium
 		<br>
-	 	<input type="radio" value="Saffron">Saffron, Crocus sativus
+	 	<input type="radio" name="9" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" value="Tumeric">Tumeric, Curcuma longa
+	 	<input type="radio" name="9" value="Tumeric">Tumeric, Curcuma longa
 	 	<br>
-	 	<input type="radio" value="Goldenseal">Goldenseal, Hydrastis canadensis
+	 	<input type="radio" name="9" value="Fennel">Fennel, Foeniculum vulgare
 		<br>
 	</form>
 
@@ -167,13 +169,13 @@
 	<form>
 		10. This herb was once believed to be eaten by serpents to improve their eyesight, making it easier to attack their victims. What herb is it?
 		<br>
-		<input type="radio" value="Fennel">Fennel, Foeniculum vulgare
+	 	<input type="radio" name="10" value="Saffron">Saffron, Crocus sativus
+	 	<br>
+	 	<input type="radio" name="10" value="Tumeric">Tumeric, Curcuma longa
+	 	<br>
+	 	<input type="radio" name="10" value="Fennel">Fennel, Foeniculum vulgare
 		<br>
-	 	<input type="radio" value="Saffron">Saffron, Crocus sativus
-	 	<br>
-	 	<input type="radio" value="Tumeric">Tumeric, Curcuma longa
-	 	<br>
-	 	<input type="radio" value="Goldenseal">Goldenseal, Hydrastis canadensis
+	 	<input type="radio" name="10" value="Goldenseal">Goldenseal, Hydrastis canadensis
 		<br>
 	</form>
 
