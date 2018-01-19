@@ -6,24 +6,38 @@
 	  <title>Herbalist Trivia Game</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">  
 	
-	<H1>Herbalism Trivia</H1>
+	<!-- //ADD BOOTSTRAP REFERENCES -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="assets/javascript/app.js"></script>
+
+
+	<h1>Herbalism Trivia</h1>
 	</head>
 	
-	<!-- REPLACE BACKGROUND-->
-	 <body background = "white_wave.png">
+	<input id= "start" type="button" value="Start Trivia Game"></button>
 
-	<!-- PUT VALUES IN ARRAY FOR INPUT TYE AND DISPLAY -->
+	<!-- REPLACE BACKGROUND-->
+	 <!-- <body background = "white_wave.png"> -->
+
+	<!-- PUT VALUES IN ARRAY FOR INPUT TYPE AND DISPLAY -->
+	<!-- ADD BOOTSTRAP COLUMNS -->
+
+	
+	<div id="game">
+
+	<h2>Time Remaining: </h2>
+	<h2 id = "timeRemaining"></h2>
 
 	<form>
 	 	1. Which spice is harvested from the stamens of a beautiful purple crocus?
 	 	<br>
-	 	<input type="radio" name="1" value="Saffron">Saffron, Crocus sativus
+	 	<input type="radio" name="1" value="Saffron" class="true">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" name="1" value="Tumeric">Turmeric, Curcuma longa
+	 	<input type="radio" name="1" value="Tumeric" class="false">Turmeric, Curcuma longa
 	 	<br>
-	 	<input type="radio" name="1" value="Saffron">Saffron, Crocus sativus
+	 	<input type="radio" name="1" value="Saffron" class="false">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" name="1" value="Tumeric">Turmeric, Curcuma longa
+	 	<input type="radio" name="1" value="Tumeric" class="false">Turmeric, Curcuma longa
 	 	<br>
 	 	
 	 </form>
@@ -33,11 +47,11 @@
 	</form>
 		2. What spice, according to Malaysian folklore, had the power to protect against crocodiles?
 		<br>
-		<input type="radio" name="2" value="Turmeric">Turmeric, Curcuma longa
+		<input type="radio" name="2" value="Tumeric">Tumeric, Curcuma longa
 		<br>
 	 	<input type="radio" name="2" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" name="2" value="Tumeric">Turmeric, Curcuma longa
+	 	<input type="radio" name="3" value="Dandelion">Dandelion, Taraxacum officinale
 	 	<br>
 	 	<input type="radio" name="2" value="Anise Seed">Anise Seed, Pimpinella anisum
 		<br>
@@ -52,7 +66,7 @@
 		<br>
 	 	<input type="radio" name="3" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" name="3" value="Tumeric">Turmeric, Curcuma longa
+	 	<input type="radio" name="3" value="Tumeric">Tumeric, Curcuma longa
 	 	<br>
 	 	<input type="radio" name="3" value="Anise Seed">Anise Seed, Pimpinella anisum
 		<br>
@@ -67,7 +81,7 @@
 		<br>
 	 	<input type="radio" name="4" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" name="4" value="Tumeric">Turmeric, Curcuma longa
+	 	<input type="radio" name="4" value="Tumeric">Tumeric, Curcuma longa
 	 	<br>
 	 	<input type="radio" name="4" value="Anise Seed">Anise Seed, Pimpinella anisum
 		<br>
@@ -82,7 +96,7 @@
 		<br>
 	 	<input type="radio" name="5" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" name="5" value="Tumeric">Turmeric, Curcuma longa
+	 	<input type="radio" name="5" value="Tumeric">Tumeric, Curcuma longa
 	 	<br>
 	 	<input type="radio" name="5" value="Goldenseal">Goldenseal, Hydrastis canadensis
 		<br>
@@ -97,8 +111,10 @@
 		<br>
 	 	<input type="radio" name="6" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" name="6" value="Tumeric">Turmeric, Curcuma longa
+	 	<input type="radio" name="6" value="Tumeric">Tumeric, Curcuma longa
 	 	<br>
+	 	<input type="radio" name="7" value="Valerian">Valerian, Valeriana officinalis
+		<br>
 	</form>
 
 	<br>
@@ -125,7 +141,7 @@
 		<br>
 	 	<input type="radio" name="8" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" name="8" value="Tumeric">Turmeric, Curcuma longa
+	 	<input type="radio" name="8" value="Tumeric">Tumeric, Curcuma longa
 	 	<br>
 	 	<input type="radio" name="8" value="Goldenseal">Goldenseal, Hydrastis canadensis
 		<br>
@@ -140,7 +156,7 @@
 		<br>
 	 	<input type="radio" name="9" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" name="9" value="Tumeric">Turmeric, Curcuma longa
+	 	<input type="radio" name="9" value="Tumeric">Tumeric, Curcuma longa
 	 	<br>
 	 	<input type="radio" name="9" value="Goldenseal">Goldenseal, Hydrastis canadensis
 		<br>
@@ -155,17 +171,34 @@
 		<br>
 	 	<input type="radio" name="10" value="Saffron">Saffron, Crocus sativus
 	 	<br>
-	 	<input type="radio" name="10" value="Tumeric">Turmeric, Curcuma longa
+	 	<input type="radio" name="10" value="Tumeric">Tumeric, Curcuma longa
 	 	<br>
 	 	<input type="radio" name="10" value="Goldenseal">Goldenseal, Hydrastis canadensis
 		<br>
 	</form>
+
+	<br>
+
+	<input id= "submit" type="button" value="Submit"></button>
+
+	</form>
+
+	</div>
+
+	<div id="results">
+	
+	<h2>Game Over</h2>
+	<h3 id="questionsRight"></h3>
+	<h3 id="questionsWrong"></h3>
+
+	</div>
+
+	<input id="playAgain" type="button" value="Play Again"></button>
 
 <body id="body">
 	
 	
 </body>
 	
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    	<script src="assets/javascript/game.js"></script>
+
 </html>

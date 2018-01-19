@@ -31,20 +31,22 @@ nav {
   text-align: center;
   margin-top: -50px;
   text-decoration: none; 
-
-
  }
 
 
-
-h2 {
-  font-size: 24px;
+h1 {
+  font-size: 36px;
   font-family: 'Georgia', Times, Times New Roman, serif;
   color: #65a8a4; 
+  text-align: center;
 }
 
+#submit
+{
 
+  font-size: 24px;
 
+}
 
 
 footer {
