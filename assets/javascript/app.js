@@ -3,7 +3,8 @@ $(document).ready(function()
 	 
 	var questionsRight = 0;
 	var questionsWrong = 0;
-	var timer = null;
+	var timer = null,
+		seconds = 300;
 
    	var correctAnswers = {
    		"1": "Saffron",
@@ -57,12 +58,12 @@ $(document).ready(function()
 		{
 			questionsRight = 0;
 			questionsWrong = 0;
-			
-			//change to JQUERY
-			document.getElementById("timeRemaining").innerHTML =  "05:00";
+			seconds = 300;
+
+			$('#timeRemaining').text("5:00")
 
 			function checkSecond(sec) {
-				if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+				if (sec < 10 && sec >= 0) {sec = "0" + sec}; 
 				if (sec < 0) {sec = "59"};
 				return sec;
 			}
@@ -72,18 +73,13 @@ $(document).ready(function()
 			}
 
 			timer = setInterval(function(){
-				//change to Jquery
-				var presentTime = document.getElementById("timeRemaining").innerHTML;
-				var timeArray = presentTime.split(/[:]+/);
+				seconds--;
+				var min = Math.floor(seconds / 60 );
+				var sec = seconds - min * 60;
+				
+				$('#timeRemaining').text(min + ':' + checkSecond(sec))
 
-				var m = timeArray[0];
-				var s = checkSecond((timeArray[1] - 1));
-
-				//change to jquery
-				document.getElementById("timeRemaining").innerHTML =  m + ":" + s;
-
-				if(s==59){m=m-1}
-				if(m<0)
+				if(seconds == 0)
 				{
 					gameOver();
 				}
